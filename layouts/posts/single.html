@@ -1,0 +1,12 @@
+<html>
+
+<body>
+    <h1>Single POST</h1>
+    {{ .Content }}
+
+    {{ with .Resources.GetMatch "*main*" }}
+    {{ .Content }}
+    {{ end }}
+</body>
+
+</html>

@@ -1,20 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
+{{ define "main" }}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-</head>
+<div class="container">
+    <div class="row slope main-row text-center img-fluid">
+        <div class="col se-content">
+            <!-- <h1 class="splash-heading">Duo Momentum</h1> -->
+            <img class="m-5 img-fluid splash-logo" src="/logo.png">
+        </div>
+    </div>
 
-<body>
-    <main>
-        <h1>Duo Momentum</h1>
-    </main>
-    <script src="index.js"></script>
-</body>
+    <div class="row slope text-container text-center">
+        <div class="col se-content">
+            <p>Tervetuloa Duo Momentumin kotisivuille! Duo Momentum tarjoaa tanssillisen pariakrobatian
+                esiintymiskeikkoja
+                monenkirjaviin tarpeisiin!</p>
+        </div>
+    </div>
+    <!-- Feedback -->
+    <div class="row slope bg testimony">
+        <div class="col-4 se-content justify-content-center">
+            <img class="img-fluid  rounded mx-auto d-block" src="https://placehold.co/200.png?font=lato">
+        </div>
+        <div class="col-7 se-content m-4">
+            “Duo Momentumin esitys oli raikas, säväyttävä ja vauhdikas! Se oli monelle paikalle olleelle
+            ensimmäinen kerta, kun
+            näkivät pariakrobatiaa ja sainkin osallistujilta palautetta siitä, kuinka esitys oli loistava
+            piristysruiske ja
+            inspiraation lähde monelle!” <br>
+            – Henriikka Konki, Jooga Om -festivaalin perustaja
+        </div>
+    </div>
 
-</html>
+
+    <!-- Contact -->
+    <div class="row slope mt-4">
+        <div class="col-4 se-content justify-content-center">
+            <img class="img-fluid  rounded mx-auto d-block" src="https://placehold.co/200.png?font=lato">
+        </div>
+        <div class="col-7 se-content m-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin condimentum felis ligula, at euismod
+            elit ultricies
+            vitae. In at consectetur arcu. Suspendisse sit amet orci id magna auctor gravida vel in eros. Sed
+            non gravida mauris.
+            Cras egestas, erat vel cursus tempor, augue leo finibus diam, nec efficitur est ex sed ipsum.
+            Integer viverra
+            scelerisque augue, vel sodales ligula
+        </div>
+    </div>
+    <!-- IG -->
+    <div class="row slope bg mt-4 testimony">
+        <div>
+            <img class="p-4 img-fluid float-start rounded" src="https://placehold.co/250.png?font=lato">
+            <img class="p-4 img-fluid float-start rounded" src="https://placehold.co/250.png?font=lato">
+            <img class="p-4 img-fluid float-start rounded" src="https://placehold.co/250.png?font=lato">
+            <img class="p-4 img-fluid float-start rounded" src="https://placehold.co/250.png?font=lato">
+            <img class="p-4 img-fluid float-start rounded" src="https://placehold.co/250.png?font=lato">
+            <img class="p-4 img-fluid float-start rounded" src="https://placehold.co/250.png?font=lato">
+        </div>
+
+    </div>
+</div>
+{{ end }}

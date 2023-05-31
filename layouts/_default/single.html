@@ -1,0 +1,10 @@
+<html>
+    <body>
+        <h1>Single</h1>
+                        {{ .Content }}
+
+            {{ with .Resources.GetMatch "*main*" }}
+            {{ .Content }}
+            {{ end }}
+    </body>
+</html>
