@@ -29,6 +29,34 @@ defaultContentLanguageInSubdir = true
     [languages.fi.params]
       subtitle = 'subtitle suomeksi'
 
+    [[languages.en.menu.main]]
+      name        = "Home"
+      url         = "/"
+      weight     = 1
+    [[languages.en.menu.main]]
+      name        = "About us"
+      url         = "/about/"
+      weight     = 2
+    [[languages.en.menu.main]]
+      name        = "Performances"
+      url         = "/performance/"
+      weight     = 3
+
+    [[languages.fi.menu.main]]
+      name        = "Koti"
+      url         = "/"
+      weight     = 1
+    [[languages.fi.menu.main]]
+      name        = "Meistä"
+      url         = "/fi/about/"
+      weight     = 2
+    [[languages.fi.menu.main]]
+
+      name        = "Esitykset"
+      url         = "/fi/performance/"
+      weight     = 3
+
+
 [menu]
   [[menu.nav]]
     name = "Home"
