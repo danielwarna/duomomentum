@@ -1,13 +1,11 @@
 ---
 
-title: "Title web page"
+title: "Our Story"
 resources:
 - name: members
   src: members.md
 ---
 
-# Meidän tarinamme
+Duo Momentum is a duo specializing in partner acrobatics, skillfully enchanting audiences with daring acrobatic stunts, captivating them with tangible audience interaction, and entertaining them with surprising choreography. Duo Momentum's story began in 2022 when two curious and playful souls crossed paths. It didn't take long after their first meeting for the duo to realize the potential of this dynamic collaboration and set their sights on the stage. Since its inception, Duo Momentum has performed at diverse indoor and outdoor events such as the Jooga Om Yoga Festival, Spring Days of Koroinen, and interdisciplinary art events in the Turku and Helsinki regions.
 
-Duo Momentum on tanssilliseen pariakrobatiaan erikoistunut duo, jonka taitona on lumota yleisö hurjilla akrobatiatempuilla, ihastuttaa käsinkosketeltavalla yleisökontaktilla ja viihdyttää yllättävillä koreografioillaan. Duo Momentumin tarina alkoi vuonna 2022 kun kaksi uteliasta ja leikkimielistä sielua kohtasi toisensa. Ei mennyt montaa viikkoa ensi tapaamisesta, kun kaksikko ymmärsi tämän timanttisen yhteistyön potentiaalin ja päätti tähdätä esiintymislavoille. Perustamisensa jälkeen Duo Momentum on esiintynyt monipuolisissa sisä- ja ulkotapahtumissa kuten Joogafestivaali Jooga Omissa, Koroisten kevätpäivillä ja poikkitaiteellisissa taidetapahtumissa Turun ja Helsingin alueella.
-
-Duon puolikkaat ovat nimiltään Daniel ja Heta, ja alla hieman lisää heistä.
+The duo's members are named Daniel and Heta, and here's a little more about them.

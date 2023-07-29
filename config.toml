@@ -4,3 +4,41 @@ title = 'Duo Momentum'
 
 [build]
   useResourceCacheWhen = 'fallback'
+
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = true
+[languages]
+  [languages.en]
+    contentDir = 'content'
+    disabled = false
+    languageCode = 'en-US'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    title = 'Project Documentation'
+    weight = 1
+    [languages.en.params]
+      subtitle = 'Reference, Tutorials, and Explanations'
+  [languages.fi]
+    contentDir = 'content'
+    disabled = false
+    languageCode = 'fi-FI'
+    languageDirection = 'ltr'
+    languageName = 'Suomi'
+    title = 'Projekt Dokumentation'
+    weight = 2
+    [languages.fi.params]
+      subtitle = 'subtitle suomeksi'
+
+[menu]
+  [[menu.nav]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.nav]]
+    name = "Blog"
+    url = "/post/"
+    weight = 2
+  [[menu.nav]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 3

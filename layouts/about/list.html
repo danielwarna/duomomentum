@@ -1,27 +1,25 @@
 {{ define "main" }}
 <container>
-    <div><h1>
-        SECTION</h1>
-
-</div>
     <div class="container">
+
+        <div class="main-title row text-container text-center">
+            <h1 class="col page-title"> {{ .Title}}</h1>
+        </div>
+
         <div class="row slope text-container">
             <div class="col se-content">
                 {{ .Content }}
-
             </div>
         </div>
+
+
+        {{ range after 1 .Pages.ByWeight }} <!-- For each content in about-->
+            {{ .Render "member_detail" }} <!-- This renders the summary.html content-->
+        {{ end }}
 
         <!-- Feedback -->
-        <div class="container pb-6 pt-6 pb-md-10 pt-md-10">
-            <div class="row">
-                {{ range .Pages.ByWeight }}
-                <div class="col-12 col-md-6 mb-2 ">{{ .Render "summary" }}</div>
-                {{ end }}
-            </div>
-        </div>
-
     </div>
+
 </container>
 
 {{ end }}

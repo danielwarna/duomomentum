@@ -1,2 +1,7 @@
-Tarjoamme tilauksesta esiintymiskeikkoja monipuolisesti yksityistilaisuuksista suurempiin tapahtumiin. Perushintamme esiintymiselle on 520€, joka sisältää 10 minuutin herkän ja henkeäsalpaavan akrobatiaohjelmanumeron. Personoimme esityksen kuitenkin aina juuri teidän toiveiden mukaisesti tilaisuuteenne sopivaksi, jolloin kokonaishinta määräytyy toiveista ja esiintymisen kestosta riippuen tapauskohtaisesti.
-Voit ottaa meihin yhteyttä ja tilata meidät esiintymään täältä [linkki].
+---
+title: "Performances"
+---
+
+We offer customized performance bookings for a wide range of events, from private gatherings to larger events. Our base price for a performance is €520, which includes a 10-minute delicate and breathtaking acrobatic act. However, we always personalize the performance to suit your specific event requirements, so the total price will vary on a case-by-case basis depending on your preferences and the duration of the performance.
+
+You can contact us and book our performance here [link].
