@@ -8,14 +8,17 @@
         </div>
     </div>
 
-        <div class="container">
+    <div class="container">
 
-            <div class="row slope text-container">
-                <div class="col se-content">
-                    {{ .Content }}
-                </div>
+        <div class="row slope text-container">
+            <div class="col se-content">
+                {{ .Content }}
             </div>
         </div>
+    </div>
+
+    {{ partial "contact.html" . }}
+
 </container>
 
 {{ end }}
