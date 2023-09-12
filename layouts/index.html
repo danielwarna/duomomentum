@@ -30,15 +30,19 @@
     <!-- Feedback -->
     <div class="row slope bg testimony">
         <div class="col-4 se-content justify-content-center">
-            <img class="img-fluid  rounded mx-auto d-block" src="/jooga_om_image.jpg">
+            {{ with resources.Get "images/jooga_om_image.jpg" }}
+            <img class="img-fluid  mx-auto d-block" src="{{ (.Resize "150x150").Permalink }}" />
+            {{ end }}
         </div>
-        <div class="col-7 se-content m-4">
+        <div class="col-7 se-content testimony-content">
             “Duo Momentumin esitys oli raikas, säväyttävä ja vauhdikas! Se oli monelle paikalle olleelle
             ensimmäinen kerta, kun
             näkivät pariakrobatiaa ja sainkin osallistujilta palautetta siitä, kuinka esitys oli loistava
             piristysruiske ja
             inspiraation lähde monelle!” <br>
-            – Henriikka Konki, Jooga Om -festivaalin perustaja
+            <br>
+            <div class="testimony-name">Henriikka Konki</div>
+            <div class="testimony-subtitle">Jooga Om -festivaalin perustaja</div>
         </div>
     </div>
 
