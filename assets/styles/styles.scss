@@ -9,7 +9,6 @@ $bg-dark: #382245;
 
 $highlight-text: $accent-color;
 
-
 body {
     // background-color: $main-bg;
     background-color: $bg-gray;
@@ -117,8 +116,8 @@ nav {
     filter: brightness(1) invert(1);
 }
 
-main-title {
-
+.accent {
+    color:$accent-color
 }
 
 .testimony {
