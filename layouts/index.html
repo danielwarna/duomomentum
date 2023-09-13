@@ -50,7 +50,7 @@
 
 
     <!-- Contact -->
-    <div class="row slope mt-4">
+    <!-- <div class="row slope mt-4">
         <div class="col-4 se-content justify-content-center">
             <img class="img-fluid  rounded mx-auto d-block" src="https://placehold.co/200.png?font=lato">
         </div>
@@ -63,9 +63,9 @@
             Integer viverra
             scelerisque augue, vel sodales ligula
         </div>
-    </div>
+    </div> -->
     <!-- IG -->
-    <div class="row slope bg mt-4 testimony">
+    <div class="row slope bg mt-4">
         {{ $igs := resources.Match "ig/*jpg" }}
         {{ $igs_s := sort $igs ".RelPermalink" "desc" }}
         {{ range after 1 (first 10 $igs_s) }}
