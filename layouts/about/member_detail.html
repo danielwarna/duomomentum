@@ -1,7 +1,13 @@
-<div class="row text-container member">
-    <div class="col ">
-        <h3> {{ .Title}}</h3>
-        {{ .Content }}
+<div class="member mb-5">
+    <div class="row g-0">
+        <div class="col p-0">
+            <h3 class="text-center p-4"> {{ .Title}}</h3>
+            {{ .Content }}
+        </div>
+        <div class="col col-md-6 {{ .Params.order}}">
+            <img class="img-fluid" src="{{ .Params.image}}">
+        </div>
+
     </div>
 </div>
 
