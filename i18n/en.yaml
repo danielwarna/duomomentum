@@ -6,3 +6,6 @@ message:
 
 send:
   other: Send
+
+contact_us:
+  other: Contact us

@@ -1,20 +1,32 @@
 $framing-bg: white;
-$main-bg: rgb(255, 205, 230);
+// $main-bg: rgb(255, 205, 230);
+$main-bg: #382245;
 
-$highlight-text: green;
+$accent-color: #693582;
+
+$bg-gray: #f2f3f3;
+$bg-dark: #382245;
+
+$highlight-text: $accent-color;
+
 
 body {
-    background-color: $main-bg;
-    border: 36px $framing-bg solid;
+    // background-color: $main-bg;
+    background-color: $bg-gray;
+    border: 24px $framing-bg solid;
+    border-top: 0px;
     border-radius: 2px;
     border-top: 0;
+}
 
+main {
+    margin-top: 3em;
 }
 
 nav {
     background-color: $framing-bg;
-    border-left: 36px $framing-bg solid;
-    border-right: 36px $framing-bg solid;
+    border-left: 24px $framing-bg solid;
+    border-right: 24px $framing-bg solid;
 }
 
 // #bg-video {
@@ -58,25 +70,33 @@ nav {
     /* Place the video behind other elements */
 }
 
+.align-right {
+    margin-left: auto;
+}
 
 .text-center {
     text-align: center !important;
 }
 
 .text-container {
-    margin: 3em 1em;
+    // margin: 3em 1em;
+    padding: 3em 1em;
     font-size: 24px;
 }
 
 .landing-content {
     padding-top: 3vh;
-    background-color: #e90089 !important;
+    background-color: $bg-gray !important;
 }
 
 .landing-logo{
     position: relative;
     min-height: 50vh;
     margin-bottom: 10vh;
+
+    .logo-landing-alignment {
+        height: 60vh !important
+    }
 }
 
 .main-row {
@@ -129,7 +149,7 @@ main-title {
 Scroll down colour change
 */
 .navbar-fixed-top.scrolled {
-    background-color: $main-bg !important;
+    // background-color: $main-bg !important;
     transition: background-color 200ms linear;
 }
 
@@ -186,4 +206,7 @@ Slanted dividers:
 .contact-us {
     padding-top: 40px;
     padding-bottom: 40px;
+
+    color: white;
+    background-color: $accent-color;
 }
