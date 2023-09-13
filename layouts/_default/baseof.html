@@ -22,6 +22,16 @@
     {{ with resources.Get "styles/styles.scss" | toCSS | postCSS }}
     <link rel="stylesheet" href="{{ .RelPermalink }}">
     {{ end }}
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9EYXQ8EGR8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-9EYXQ8EGR8');
+    </script>
 </head>
 
 <body>

@@ -4,7 +4,7 @@ $main-bg: #382245;
 
 $accent-color: #693582;
 
-$bg-gray: #f3eef4;
+$bg-gray: #e8e5e5;
 $bg-dark: #382245;
 
 $highlight-text: $accent-color;
@@ -122,7 +122,8 @@ nav {
 
 .testimony {
     padding: 5em 1em ;
-    background-color: var(--bs-light);
+    // background-color: var(--bs-light);
+    background-color: var(--bs-gray-100);
 
     .testimony-content {
         border-left: 2px gray solid;
