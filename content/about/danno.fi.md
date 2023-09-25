@@ -1,7 +1,7 @@
 ---
 
 title: "Danno"
-image: "https://placehold.co/800.png?font=lato"
+image: "/danno-website-profile.jpg"
 order: "order-last"
 ---
 

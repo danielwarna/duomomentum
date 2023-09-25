@@ -1,7 +1,7 @@
 ---
 
 title: "Heta"
-image: "https://placehold.co/800.png?font=lato"
+image: "/heta-website-profile.jpg"
 order: "order-first"
 ---
 
