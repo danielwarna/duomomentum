@@ -1,10 +1,12 @@
 <div class="member mb-5">
     <div class="row g-0">
-        <div class="col m-5">
-            <h3 class="text-center m-5 p-4"> {{ .Title}}</h3>
+        <div class="col p-5 col-md-6 col-12">
+            <h3 class="text-center m-4"> {{ .Title}}</h3>
+            <hr class="my-4 mx-5 p">
             {{ .Content }}
         </div>
-        <div class="col col-md-6 {{ .Params.order}}">
+
+        <div class="col col-md-6 col-12 {{ .Params.order}}">
             <img class="img-fluid" src="{{ .Params.image}}">
         </div>
 
