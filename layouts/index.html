@@ -18,7 +18,7 @@
             </video>
             <div class="container d-flex justify-content-center align-items-center logo-landing-alignment vh-100">
                 {{ with resources.Get "images/duo_momentum_logo2_bw.jpg" }}
-                <img class="m-5 img-fluid splash-logo" src="{{ (.Resize "800x800 webp").Permalink }}">
+                <img alt="logo acrobats doing a dance lift with Duo Momentum as text" class="m-5 img-fluid splash-logo" src="{{ (.Resize "800x800 webp").Permalink }}">
                 {{ end }}
             </div>
         </div>
@@ -35,7 +35,7 @@
     <div class="row slope bg testimony">
         <div class="col-4 se-content justify-content-center">
             {{ with resources.Get "images/jooga_om_image.jpg" }}
-            <img class="img-fluid  mx-auto d-block" src="{{ (.Resize "150x150 webp").Permalink }}" />
+            <img class="img-fluid  mx-auto d-block" src="{{ (.Resize "150x150 webp").RelPermalink }}" />
             {{ end }}
         </div>
         <div class="col-7 se-content testimony-content">
@@ -75,12 +75,12 @@
             {{ $imgSm := .Fill "350x350 webp" }}
             <div class="col-md-4 ig_container px-2 py-3">
             <!-- <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt=""> -->
-            <a href="https://www.instagram.com/acroduo.momentum/">
+            <a href="https://www.instagram.com/acroduo.momentum/" aria-label="Duo momentum instagram">
                 <picture>
                     <source media="(orientation: landscape)" srcset="{{ $img.RelPermalink }}">
                     <source media="(orientation: portrait)" srcset="{{ $imgSm.RelPermalink }}">
 
-                    <img  src="{{ $img.RelPermalink }}" class="ig_image img-fluid float-start rounded">
+                    <img alt="acrobatics image from instagram"  src="{{ $img.RelPermalink }}" class="ig_image img-fluid float-start rounded">
                 </picture>
             </a>
             </div>
