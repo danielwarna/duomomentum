@@ -18,7 +18,7 @@
             </video>
             <div class="container d-flex justify-content-center align-items-center logo-landing-alignment vh-100">
                 {{ with resources.Get "images/duo_momentum_logo2_bw.jpg" }}
-                <img alt="logo acrobats doing a dance lift with Duo Momentum as text" class="m-5 img-fluid splash-logo" src="{{ (.Resize "800x800 webp").Permalink }}">
+                <img alt="logo acrobats doing a dance lift with Duo Momentum as text" class="m-5 img-fluid splash-logo" src="{{ (.Resize "800x800 webp").RelPermalink }}">
                 {{ end }}
             </div>
         </div>
