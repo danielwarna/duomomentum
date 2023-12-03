@@ -118,8 +118,12 @@ nav {
     max-height: 700px;
 }
 
-.accent {
-    color:$accent-color
+.navbar {
+    .accent {
+        color: $accent-color;
+        color: $accent-light;
+        font-weight: 500;
+    }
 }
 
 .testimony {

@@ -35,7 +35,7 @@
     <header>
         <nav class="navbar navbar-fixed-top fixed-top navbar-expand-lg">
             <div class="container-md">
-                <a class="accent navbar-brand" href="/">Duo Momentum</a>
+                <a class="navbar-brand accent" href="/">Duo Momentum</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -62,7 +62,7 @@
                     <div class="navbar-nav ml-auto align-right">
 
                         <div class="nav-item nav-link">
-                            <a href="{{ .Sites.First.Home.RelPermalink }}">English</a>
+                            <a class="nav-link" href="{{ .Sites.First.Home.RelPermalink }}">English</a>
                         </div>
                         <div class="nav-item nav-link">
                             {{ $fiSite := false}}
@@ -71,7 +71,7 @@
                             {{ end }}
                             {{/* ⛑️ Safely wrap the result in a with clause and voilà: */}}
                             {{ with $fiSite }}
-                            <a href="{{ .Home.RelPermalink }}">Suomi</a>
+                            <a class="nav-link" href="{{ .Home.RelPermalink }}">Suomi</a>
                             {{ end }}
                         </div>
                     </div>
