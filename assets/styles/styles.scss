@@ -58,7 +58,7 @@ nav {
 
 #bg-video {
     position: absolute;
-    top: 0;
+    top: -90px;
     left: 0;
     width: 100%;
     height: 100vh;
@@ -114,6 +114,7 @@ nav {
 .splash-logo {
     mix-blend-mode: screen;
     filter: brightness(1) invert(1);
+    max-height: 700px;
 }
 
 .accent {
