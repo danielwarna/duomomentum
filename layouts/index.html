@@ -18,7 +18,13 @@
             </video>
             <div class="container d-flex justify-content-center align-items-center logo-landing-alignment vh-100">
                 {{ with resources.Get "images/duo_momentum_logo2_bw.jpg" }}
-                <img alt="logo acrobats doing a dance lift with Duo Momentum as text" class="m-5 img-fluid splash-logo" src="{{ (.Resize "800x800 webp").RelPermalink }}">
+                <img
+                    alt="logo acrobats doing a dance lift with Duo Momentum as text"
+                    class="m-5 img-fluid splash-logo"
+                    src="{{ (.Resize "700x700 webp").RelPermalink }}"
+                    height="700px"
+                    width="700px"
+                    >
                 {{ end }}
             </div>
         </div>
@@ -77,10 +83,10 @@
             <!-- <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt=""> -->
             <a href="https://www.instagram.com/acroduo.momentum/" aria-label="Duo momentum instagram">
                 <picture>
-                    <source media="(orientation: landscape)" srcset="{{ $img.RelPermalink }}">
-                    <source media="(orientation: portrait)" srcset="{{ $imgSm.RelPermalink }}">
+                    <source media="(orientation: landscape)" srcset="{{ $img.RelPermalink }}" height="600px" width="600px">
+                    <source media="(orientation: portrait)" srcset="{{ $imgSm.RelPermalink }}" height="350px" width="350px">
 
-                    <img alt="acrobatics image from instagram"  src="{{ $img.RelPermalink }}" class="ig_image img-fluid float-start rounded">
+                    <img alt="acrobatics image from instagram"  src="{{ $img.RelPermalink }}" class="ig_image img-fluid float-start rounded" height="600px" width="600px">
                 </picture>
             </a>
             </div>
