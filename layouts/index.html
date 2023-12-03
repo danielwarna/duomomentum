@@ -17,7 +17,9 @@
                 <source src="/website_video_bg2_small.mp4">
             </video>
             <div class="container d-flex justify-content-center align-items-center logo-landing-alignment vh-100">
-                <img class="m-5 img-fluid splash-logo" src="/duo_momentum_logo2_bw.jpg">
+                {{ with resources.Get "images/duo_momentum_logo2_bw.jpg" }}
+                <img class="m-5 img-fluid splash-logo" src="{{ (.Resize "800x800 webp").Permalink }}">
+                {{ end }}
             </div>
         </div>
     </div>
@@ -33,7 +35,7 @@
     <div class="row slope bg testimony">
         <div class="col-4 se-content justify-content-center">
             {{ with resources.Get "images/jooga_om_image.jpg" }}
-            <img class="img-fluid  mx-auto d-block" src="{{ (.Resize "150x150").Permalink }}" />
+            <img class="img-fluid  mx-auto d-block" src="{{ (.Resize "150x150 webp").Permalink }}" />
             {{ end }}
         </div>
         <div class="col-7 se-content testimony-content">
@@ -69,11 +71,17 @@
         {{ $igs := resources.Match "ig/*jpg" }}
         {{ $igs_s := sort $igs ".RelPermalink" "desc" }}
         {{ range after 1 (first 10 $igs_s) }}
-            {{ $img := .Fill "800x800" }}
+            {{ $img := .Fill "600x600 webp" }}
+            {{ $imgSm := .Fill "350x350 webp" }}
             <div class="col-md-4 ig_container px-2 py-3">
             <!-- <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt=""> -->
             <a href="https://www.instagram.com/acroduo.momentum/">
-                <img  src="{{ $img.RelPermalink }}" class="ig_image img-fluid float-start rounded">
+                <picture>
+                    <source media="(orientation: landscape)" srcset="{{ $img.RelPermalink }}">
+                    <source media="(orientation: portrait)" srcset="{{ $imgSm.RelPermalink }}">
+
+                    <img  src="{{ $img.RelPermalink }}" class="ig_image img-fluid float-start rounded">
+                </picture>
             </a>
             </div>
             {{ end }}
