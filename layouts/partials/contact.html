@@ -8,12 +8,12 @@
         <div class="col">
             <form name="contact" method="POST" data-netlify="true">
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">{{ i18n "email" }}</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com">
+                    <label for="email_address" class="form-label">{{ i18n "email" }}</label>
+                    <input name="email_address" type="email" class="form-control" id="email_address" aria-describedby="emailHelp" placeholder="name@example.com">
                 </div>
                 <div class="mb-3">
                     <label for="message" class="form-label">{{ i18n "message" }}</label>
-                    <textarea type="text" rows="5" class="form-control" id="message" aria-describedby="emailHelp"></textarea>
+                    <textarea name="message" type="text" rows="5" class="form-control" id="message"></textarea>
                 </div>
                 <button type="submit" class="btn btn-secondary">{{ i18n "send" }}</button>
             </form>
